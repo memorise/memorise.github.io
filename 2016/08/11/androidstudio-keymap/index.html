@@ -92,7 +92,7 @@
 <meta property="og:description" content="整理的Android Studio快捷键，方便我们更好的调教程序,立志成为键盘流">
 <meta property="og:image" content="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default.png">
 <meta property="og:image" content="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default_copy.png">
-<meta property="og:updated_time" content="2016-08-13T07:51:01.682Z">
+<meta property="og:updated_time" content="2016-08-19T02:29:07.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Studio快捷键整理">
 <meta name="twitter:description" content="整理的Android Studio快捷键，方便我们更好的调教程序,立志成为键盘流">
@@ -341,6 +341,7 @@
 <p>注意这里介绍的快捷键是Android Studio的default风格、Windows系统。对于从Eclipse转过来的同学，这也是一个不适应的主要原因之一。虽然你也可以把快捷键风格改为Eclipse，但是就有可能享受不到Android Studio带来的新功能了，万事开头难嘛，一个项目之后还是可以玩的溜溜的啦，所以我们还是入乡随俗，用default风格<br><img src="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default.png" alt="操作示例" title="keymap_default.png"><br>如果要修改快捷键的话，可以先copy，然后就可以对快捷键进行修改了<br><img src="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default_copy.png" alt="操作示例" title="keymap_default_copy.png"><br>废话：如果无效的话查查看是不是和其他软件的快捷键冲突了=￣ω￣=</p>
 <ol>
 <li>Alt+1，快速打开或隐藏工程面板</li>
+<li>Alt+~(1左边的按键)，快捷调用版本控制的功能</li>
 <li>Alt+Click，竖选，按着Alt+鼠标左键不放移动鼠标就能看到效果（按住鼠标滚轮和左键也是这个功能）</li>
 <li>Alt+Enter，可以得到一些Intention Action，例如将”==”改为”equals()”、导入包、自动修正</li>
 <li>Alt+F1，查找代码所在位置</li>
@@ -392,10 +393,13 @@
 <li><p>Ctrl+Shift+ +或-，展开折叠全部代码块</p>
 </li>
 <li>Ctrl+Shift+/，多行注释(/**/)</li>
+<li>Ctrl+Shift+A，对于没有设置快捷键或者忘记快捷键的菜单或者动作（Action），可能通过输入其名字快速调用(可能会与UC浏览器的截图功能冲突)</li>
 <li>Ctrl+shift+Enter，自动填充表达式如if,while,for,switch等(比如打出一个if,然后按下快捷键，自动填充剩下的格式)</li>
 <li>Ctrl+Shift+Backspace，可以跳转到上次编辑的地方</li>
 <li>Ctrl+Shift+F7，可以高亮当前元素在当前文件中的使用,再按一次快捷键或Esc取消高亮，可以高亮多种元素</li>
+<li>Ctrl+Shift+F12，代码编辑区全屏与非全屏切换</li>
 <li>Ctrl+Shift+Insert，可以选择剪贴板内容并插入</li>
+<li>Ctrl+Shift+I，不离开当前文件当前类的情况下快速查看某个方法或者类的实现。通过大概预览下调用的方法，可以避免许多未知的坑。</li>
 <li>Ctrl+Shift+J，可以整合两行（多行）</li>
 <li>Ctrl+Shift+N，可以快速打开文件</li>
 <li>Ctrl+Shift+Space，在很多时候都能够给出Smart提示</li>
@@ -408,10 +412,11 @@
 </li>
 <li>F2或Shift+F2，高亮错误或警告快速定位</li>
 <li>Shift+F6，重构/重命名,相当于eclipse的Alt+Shift+R</li>
-<li><p>Shift+F10，运行当前程序，如果为instant run，可以使用Ctrl+F11非instant run模式运行</p>
+<li><p>Shift+F10，运行当前程序，如果为instant run，可以使用Ctrl+F5非instant run模式运行</p>
 </li>
-<li><p>Tab，代码标签输入完成后，按Tab，生成代码。</p>
+<li><p>F11，Bookmarks书签，在需要的位置打上书签，按Shift+F11打开书签管理，点击可以跳转到打了书签的位置，非常方便，再按一次F11取消书签</p>
 </li>
+<li>Tab，代码标签输入完成后，按Tab，生成代码。</li>
 <li>/**+Enter，添加javadoc注释</li>
 </ol>
 <p>debug用到的:</p>
@@ -465,6 +470,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/13/androidstudio-skill/" rel="prev" title="Android Studio一些使用技巧">
+                Android Studio一些使用技巧 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -536,7 +545,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
