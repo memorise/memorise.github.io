@@ -92,7 +92,7 @@
 <meta property="og:description" content="整理的Android Studio快捷键，方便我们更好的调教程序,立志成为键盘流">
 <meta property="og:image" content="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default.png">
 <meta property="og:image" content="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default_copy.png">
-<meta property="og:updated_time" content="2016-11-01T07:38:49.508Z">
+<meta property="og:updated_time" content="2016-11-30T01:33:23.846Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android Studio快捷键整理">
 <meta name="twitter:description" content="整理的Android Studio快捷键，方便我们更好的调教程序,立志成为键盘流">
@@ -341,11 +341,15 @@
 <p>注意这里介绍的快捷键是Android Studio的default风格、Windows系统。对于从Eclipse转过来的同学，这也是一个不适应的主要原因之一。虽然你也可以把快捷键风格改为Eclipse，但是就有可能享受不到Android Studio带来的新功能了，万事开头难嘛，一个项目之后还是可以玩的溜溜的啦，所以我们还是入乡随俗，用default风格<br><img src="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default.png" alt="操作示例" title="keymap_default.png"><br>如果要修改快捷键的话，可以先copy，然后就可以对快捷键进行修改了<br><img src="http://7xi69z.com1.z0.glb.clouddn.com/keymap_default_copy.png" alt="操作示例" title="keymap_default_copy.png"><br>废话：如果无效的话查查看是不是和其他软件的快捷键冲突了=￣ω￣=</p>
 <ol>
 <li>Alt+1，快速打开或隐藏工程面板</li>
-<li>Alt+~(1左边的按键)，快捷调用版本控制的功能</li>
+<li>Alt+0~9，打开对应常用工具</li>
+<li>Alt+BackQuote (`)(1左边的按键)，快捷调用版本控制的功能</li>
 <li>Alt+Click，竖选，按着Alt+鼠标左键不放移动鼠标就能看到效果（按住鼠标滚轮和左键也是这个功能）</li>
+<li>Alt+Delete，安全删除</li>
 <li>Alt+Enter，可以得到一些Intention Action，例如将”==”改为”equals()”、导入包、自动修正</li>
 <li>Alt+F1，查找代码所在位置</li>
 <li>Alt+F3，选中文本，按快捷键可以快速寻找相同文本，按F3可以向下查找</li>
+<li>Alt+F7，FindUsages,查找当前选中的地方在哪里被使用了</li>
+<li>Alt+Home，显示导航条</li>
 <li>Alt+Insert，生成代码，可以生成构造器/Getter/Setter/Override等，还有一些插件也是在此选择</li>
 <li>Alt+Left/Right，切换代码视图</li>
 <li>Alt+Q，可以看到当前方法的声明</li>
@@ -353,88 +357,155 @@
 </li>
 <li><p>Alt+Shift+C，查找最近的更改，对比最近修改的代码</p>
 </li>
-<li>Alt+Shift+F10，表示自动运行程序</li>
+<li>Alt+Shift+F，添加到收藏夹</li>
+<li>Alt+Shift+F9，选择调试程序</li>
+<li>Alt+Shift+F10，选择运行程序</li>
+<li>Alt+Shift+I，在当前项目中检查当前文件(Inspect Code)</li>
 <li>Alt+Shift+Insert ，竖选模式，Alt+Click的加强版，不用持续按着键盘，再按一次则取消（鼠标右键-&gt;Column Selection Mode）</li>
 <li><p>Alt+Shift+Up/Down，上下移动当前行（相当于eclipse的Alt+Up/Down）</p>
 </li>
-<li><p>Ctrl+Alt+B，可以跳转到抽象方法的实现</p>
+<li><p>Ctrl+Alt+B，可以跳转到抽象方法的实现类或实现方法</p>
 </li>
+<li>Ctrl+Alt+C，提取常量</li>
+<li>Ctrl+Alt+F，为选中表达式生成全局变量</li>
+<li>Ctrl+Alt+F7，查看引用位置</li>
 <li>Ctrl+Alt+H，查找调用的位置</li>
+<li>Ctrl+Alt+I，自动缩进</li>
+<li>Ctrl+Alt+J，Surround的代码模板</li>
 <li>Ctrl+Alt+L，格式化代码（用网易云音乐的同学可能会有冲突）</li>
 <li>Ctrl+Alt+Left/Right，返回至上次浏览的位置</li>
+<li>Ctrl+Alt+M，提取方法</li>
+<li>Ctrl+Alt+N，内联函数，重构代码时用的，原先需要调用一个函数的地方，直接把那个函数里面的代码复制过来。</li>
 <li>Ctrl+Alt+O，优化导入的类和包（清除无效包引用）</li>
+<li>Ctrl+Alt+P，提取参数</li>
+<li>Ctrl+Alt+S，快速打开设置页面</li>
 <li>Ctrl+Alt+Space，类名或接口名提示</li>
+<li>Ctrl+Alt+T，可以把代码包在一块内（Surround With），例如try/catch、if else（相当于eclipse的Alt+Shift+Z）</li>
 <li>Ctrl+Alt+V，可以引入变量。例如把括号内的SQL赋成一个变量</li>
-<li><p>Ctrl+Alt+T，可以把代码包在一块内（Surround With），例如try/catch、if else（相当于eclipse的Alt+Shift+Z）</p>
+<li><p>Ctrl+Alt+Y，Synchronize，同步代码</p>
 </li>
-<li><p>Ctrl + +或-，展开或折叠代码块</p>
+<li><p>Ctrl+ +或-，展开或折叠代码块</p>
 </li>
 <li>Ctrl+[或]，可以跳到大括号的开头结尾</li>
-<li>Ctrl+/，单行注释(//)</li>
-<li>Ctrl+D，复制本行到下一行</li>
-<li>Ctrl+E，可以显示最近编辑的文件列表</li>
+<li>Ctrl+/，添加/移除单行注释(//)</li>
+<li>Ctrl+BackQuote (`)，快速配置Android Studio</li>
+<li>Ctrl+ 0~9，跳转到指定书签，和Ctrl+F11一起用的</li>
+<li>Ctrl+B，找到变量或方法声明处</li>
+<li>Ctrl+Backspace，选中文本的话就是单纯的删除文本，未选中的话就是从当前光标位置删除到单词开始位置，删除空白的功能吧，动手试一下就明白了</li>
+<li>Ctrl+C，复制当前行到粘帖板，注意如果没有选择文本的话是复制一整行</li>
+<li>Ctrl+Click,找到变量或方法声明处，同Ctrl+B</li>
+<li>Ctrl+D，复制并粘贴到后面，如果没有选择文本的话就是复制光标所在的行并粘贴到下一行</li>
+<li>Ctrl+Delete，Ctrl+Backspace的反向功能</li>
+<li>Ctrl+E，列出最近打开的文件列表</li>
+<li>Ctrl+F，查找</li>
 <li>Ctrl+G，光标跳转到指定行数，还可以指定第几列（第几个字符串）</li>
+<li>Ctrl+F1，错误或警告描述</li>
 <li>Ctrl+F3，选中该文本，和向上查找当前选中的文本</li>
+<li>Ctrl+F4，关闭当前编辑的文件</li>
+<li>Ctrl+F5，清理和重新运行（clean and rerun）</li>
+<li>Ctrl+F6，更改签名</li>
 <li>Ctrl+F7，可以查询当前元素在当前文件中的引用，然后按F3可以选择</li>
+<li>Ctrl+F9，编译(Make Project)</li>
+<li>Ctrl+F11，带编号的书签开关</li>
 <li>Ctrl+F12，可以显示当前文件的结构（相当于eclipse的Ctrl+O）</li>
 <li>Ctrl+H，显示类结构图</li>
+<li>Ctrl+I，显示所有可以实现的方法</li>
+<li>Ctrl+Insert，同Ctrl+C，复制到粘贴板</li>
 <li>Ctrl+J，Live Templates，代码模板</li>
+<li>Ctrl+K，VCS提交</li>
 <li>Ctrl+L，向下查找当前选中的文本(相当于eclipse的Ctrl+K)，需使用Ctrl+F3才能改变选中的文本</li>
 <li>Ctrl+Left/Right，光标定位到行（文本）首/尾</li>
 <li>Ctrl+N，可以快速打开类</li>
 <li>Ctrl+O，可以选择父类的方法进行重写(Alt+Insert-&gt;Override Methods)</li>
-<li>Ctrl+P，可以显示调用的方法的参数信息</li>
+<li>Ctrl+P，可以显示调用的方法的简要文档</li>
 <li>Ctrl+Q，可以看JavaDoc</li>
 <li>Ctrl+R，查找替换</li>
 <li>Ctrl+Space，代码提示(与输入法冲突，我的话就是Settings-&gt;keymap,搜索Cyclic Expand Word，右键remove掉Alt+/快捷键。再搜索Basic，右键remove掉Ctrl+Space快捷键，再添加一个Alt+/的快捷键，直接改为了eclipse风格的代码提示)</li>
+<li>Ctrl+T，VCS更新</li>
+<li>Ctrl+Tab，切换编辑窗口</li>
 <li>Ctrl+U，跳转到父类，光标要在可以跳转到父类的方法上才有效</li>
+<li>Ctrl+V，粘贴</li>
 <li>Ctrl+W，可以选择单词,连续按的话继而语句继而行继而函数</li>
-<li>Crtl+X，剪切本行 ，剪切的代码会被放到粘贴板里，可以使用Crtl+V粘贴或者Ctrl+Shift+Insert选择</li>
+<li>Crtl+X，剪切，没有选择文本的话就是剪切光标所在的行</li>
 <li><p>Crtl+Y，删除本行，相当于eclipse的Ctrl+D</p>
 </li>
 <li><p>Ctrl+Shift+ +或-，展开折叠全部代码块</p>
 </li>
-<li>Ctrl+Shift+/，多行注释(/**/)</li>
+<li>Ctrl+Shift+/，添加/移除块注释(/**/)</li>
+<li>Ctrl+Shift+[或]，向上或向下选择当到到最近的大括号中的代码块</li>
 <li>Ctrl+Shift+A，对于没有设置快捷键或者忘记快捷键的菜单或者动作（Action），可能通过输入其名字快速调用(可能会与UC浏览器的截图功能冲突)</li>
+<li>Ctrl+Shift+B，跳转到声明的属性类</li>
+<li>Ctrl+Shift+E，列出最近编辑过的文件列表</li>
 <li>Ctrl+shift+Enter，自动填充表达式如if,while,for,switch等(比如打出一个if,然后按下快捷键，自动填充剩下的格式)</li>
 <li>Ctrl+Shift+Backspace，可以跳转到上次编辑的地方</li>
+<li>Ctrl+Shift+F，在项目下的所有路径查找</li>
+<li>Ctrl+Shift+F4，关闭活动的运行、消息、查找等窗口</li>
 <li>Ctrl+Shift+F7，可以高亮当前元素在当前文件中的使用,再按一次快捷键或Esc取消高亮，可以高亮多种元素</li>
+<li>Ctrl+Shift+F9，编译所选的文件、包或模块</li>
 <li>Ctrl+Shift+F12，代码编辑区全屏与非全屏切换</li>
+<li>Ctrl+Shift+H，打开方法层次关系，当然是光标选中该方法再按才有效啦</li>
 <li>Ctrl+Shift+Insert，可以选择剪贴板内容并插入</li>
 <li>Ctrl+Shift+I，不离开当前文件当前类的情况下快速查看某个方法或者类的实现。通过大概预览下调用的方法，可以避免许多未知的坑。</li>
+<li>Ctrl+Shift+Insert，粘贴板缓冲区</li>
 <li>Ctrl+Shift+J，可以整合两行（多行）</li>
 <li>Ctrl+Shift+N，可以快速打开文件</li>
-<li>Ctrl+Shift+Space，在很多时候都能够给出Smart提示</li>
+<li>Ctrl+Shift+R，路径查找替换</li>
+<li>Ctrl+Shift+Space，代码智能补全和模板提示</li>
 <li>Ctrl+Shift+U，大小写转换</li>
-<li><p>Ctrl+Shift+Up/Down，移动代码(如果光标在普通代码行上，上下移动该行代码。如果光标在{或}所在的行上，上下移动{}里面的代码块,例如移动一个方法，else if代码块等等)</p>
+<li>Ctrl+Shift+V，同Ctrl+Shift+Insert，粘贴板缓冲区</li>
+<li>Ctrl+Shift+Up/Down，移动代码(如果光标在普通代码行上，上下移动该行代码。如果光标在{或}所在的行上，上下移动{}里面的代码块,例如移动一个方法，else if代码块等等)</li>
+<li><p>Ctrl+Shift+W,缩小选中的代码块，即Ctrl+W的反向</p>
 </li>
 <li><p>Ctrl+Shift+Alt+N，查找类中的方法或变量</p>
 </li>
+<li><p>Ctrl+Shift+Alt+S，打开项目结构(Project Structure)</p>
+</li>
 <li><p>Shift+Click，可以关闭文件(点击的时候是点需要关闭的文件的选项卡)</p>
 </li>
-<li>F2或Shift+F2，高亮错误或警告快速定位</li>
+<li>Shift+Delete，同Ctrl+X，剪切本行</li>
+<li>Shift+Enter，换行</li>
+<li>Shift+Esc，隐藏最后活动的窗口</li>
+<li>Shift+F1，外部文档(external documentation)</li>
+<li>Shift+F2，向上快速定位高亮错误或警告</li>
+<li>Shift+F3,向上查找，F3的反向</li>
 <li>Shift+F6，重构/重命名,相当于eclipse的Alt+Shift+R</li>
-<li><p>Shift+F10，运行当前程序，如果为instant run，可以使用Ctrl+F5非instant run模式运行</p>
+<li>Shift+F10，编译运行</li>
+<li>Shift+F11，打开书签管理</li>
+<li>Shift+Insert，同Ctrl+V，粘贴</li>
+<li>Shift+Shift，查找所有</li>
+<li><p>Shift+Tab，手动向后缩进，Tab是向前缩进</p>
 </li>
-<li><p>F3，向下查找当前选中的文本(相当于eclipse的Ctrl+K)，需使用Ctrl+F3才能改变选中的文本</p>
+<li><p>Esc，从工具窗口切换到编辑窗口</p>
 </li>
-<li>F11，Bookmarks书签，在需要的位置打上书签，按Shift+F11打开书签管理，点击可以跳转到打了书签的位置，非常方便，再按一次F11取消书签</li>
-<li>Tab，代码标签输入完成后，按Tab，生成代码。</li>
+<li>F2，向下快速定位高亮错误或警告，Shift+F2的反向</li>
+<li>F3，向下查找当前选中的文本(相当于eclipse的Ctrl+K)，这里有点奇葩，如果搜索框里的文本不为空的话，他会按照搜索框里的文本查找，如果为空的话，他是查找的最后一次在搜索框的文本，这时要想改变需要查找的文本的话Ctrl+F修改文本框内容就好了</li>
+<li>F4，查看源码</li>
+<li>F5，复制类</li>
+<li>F6，移动类，光标在内部类的话就是移动内部类</li>
+<li>F11，Bookmarks书签开关，非常好用的功能，配合Shift+F11一起</li>
+<li>F12，切换到最近使用的工具窗口</li>
+<li>Tab，代码标签输入完成后，按Tab，生成代码。（另一个作用就是众所周知的缩进啦）</li>
 <li>/**+Enter，添加javadoc注释</li>
 </ol>
 <p>debug用到的:</p>
 <ol>
 <li>Alt+F8，debug时选中查看值</li>
-<li>Alt+Shift+F7，debug是强制进入代码</li>
+<li>Alt+F9，运行到当前光标处</li>
+<li>Alt+Shift+F7，强制进入函数里面</li>
+<li>Alt+Shift+F8，强制单步运行</li>
+<li>Ctrl+Shift+F8，查看断点</li>
 <li>Ctrl+Shift+F9，debug运行java类</li>
 <li>Ctrl+Shift+F10，正常运行java类</li>
 <li>Ctrl+F2，停止运行</li>
-<li>F7，debug相当于eclipse的f5就是进入到代码</li>
-<li>F8，debug相当于eclipse的f6跳到下一步</li>
-<li>Shift+F8，debug相当于eclipse的f8跳到下一个断点，也相当于eclipse的f7跳出函数</li>
+<li>Ctrl+F8,断点开关</li>
+<li>F7，进入函数里面</li>
+<li>F8，单步运行</li>
+<li>F9，重启程序</li>
+<li>Shift+F7，智能进入函数</li>
+<li>Shift+F8，跳出函数</li>
 <li>Shift+F9，debug当前程序</li>
 </ol>
-<p>参考自：<a href="http://blog.sina.com.cn/s/blog_9ac333de0102vsxf.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_9ac333de0102vsxf.html</a></p>
+<p>参考自：<a href="http://blog.sina.com.cn/s/blog_9ac333de0102vsxf.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_9ac333de0102vsxf.html</a><br><a href="http://blog.csdn.net/github_14899071/article/details/50216541" target="_blank" rel="external">http://blog.csdn.net/github_14899071/article/details/50216541</a></p>
 
       
     </div>
